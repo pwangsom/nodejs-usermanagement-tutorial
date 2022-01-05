@@ -1,0 +1,33 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">New User</li>
+    </ol>
+</nav>
+
+
+<form class="row g-3 needs-validation" method="POST" action="/adduser" novalidate>
+    <div class="col-md-6">
+        <label for="inputFirstName" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="inputFirstName" name="firt_name">
+    </div>
+    <div class="col-md-6">
+        <label for="inputLastName" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="inputLastName" name="last_name">
+    </div>
+    <div class="col-md-6">
+        <label for="inputEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail" name="email">
+    </div>
+    <div class="col-md-6">
+        <label for="inputPhone" class="form-label">Phone</label>
+        <input type="text" class="form-control" id="inputPhone" name="phone">
+    </div>
+    <div class="col-12">
+        <label for="inputComment" class="form-label">Comments</label>
+        <input type="text" class="form-control" id="inputComment" placeholder="Some comments" name="comments" style="height: 200px">
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+</form>
